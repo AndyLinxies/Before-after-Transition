@@ -1,0 +1,65 @@
+/*#exo1::before{
+background-color: red;
+width: 1px;
+height: 2px;
+content: "";
+display: block;
+}*/
+#exo1::after{
+    background-color: red;
+    width: 1px;
+    height: 4px;
+    content: "";
+    display: block;
+    transition-duration: 2s;
+    } 
+#exo1:hover::after{
+    width: 60px;
+} 
+/* fin Exo 1 */
+
+/* Exo 2 */
+#exo2{
+    position: relative;
+    text-decoration: none;
+}
+#exo2::after{
+    background-color: red;
+    bottom: -4px;
+    width: 1px;
+    height: 4px;
+    content: "";
+    margin-left: 27px;
+    transition-duration: 3s;
+    position: absolute;
+}
+#exo2:hover::after{
+    width: 60px;
+    margin-left: 0px;
+    background-color:red;
+}
+/* fin Exo 2 */
+
+/* Exo 3 */
+#exo3{
+    position:relative;
+    text-decoration: none;
+}
+#exo3::after{
+    background-color: red;
+    width: 60px;
+    height: 4px;
+    content: "";
+    display: block;
+    transition-duration: 3s;
+    position: absolute;
+    bottom: -4px;
+    z-index: -2;
+}
+#exo3:hover::after{
+    height: 30px;
+    width: 60px;
+    z-index: -1;
+
+}
+/* fin Exo 3 */
